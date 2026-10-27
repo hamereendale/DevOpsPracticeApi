@@ -19,6 +19,8 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
+// Employee CRUD endpoints
+
 app.MapGet("/employees", async (AppDbContext dbContext) =>
 {
     var employees = await dbContext.Employees.ToListAsync();
