@@ -20,6 +20,7 @@ builder.Services.AddOpenApi();
 var app = builder.Build();
 
 // Employee CRUD endpoints
+// Document employee validation endpoints
 
 app.MapGet("/employees", async (AppDbContext dbContext) =>
 {
